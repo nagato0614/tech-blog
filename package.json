@@ -1,0 +1,19 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "",
+  "dest": "dist/",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev blog",
+    "build": "vuepress build blog -o docs",
+    "push": "gh-pages -d ./ -b gh-pages",
+    "deploy": "npm run build && npm run push"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "vuepress": "^1.4.1"
+  }
+}
